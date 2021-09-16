@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tensorflow_jupyter:
+    build: ./tensor
+    image: study_tensor
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebook:/tf/notebooks
