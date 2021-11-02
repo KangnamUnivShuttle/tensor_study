@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  infra_kwsnet:
+    external: true
+
+services:
+  tensorflow_jupyter:
+    build: ../tensor
+    image: study_tensor
+    container_name: kwsnet-jupyter-container
+    restart: always
+    networks:
+      - infra_kwsnet
+    volumes:
+      - ../notebook:/tf/notebooks
