@@ -6,7 +6,7 @@ networks:
 
 services:
   tensorflow_jupyter:
-    build: ../tensor
+    build: ./
     image: study_tensor
     container_name: kwsnet-jupyter-container
     restart: always
