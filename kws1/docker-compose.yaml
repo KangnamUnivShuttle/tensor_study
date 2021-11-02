@@ -10,6 +10,8 @@ services:
     image: study_tensor
     container_name: kwsnet-jupyter-container
     restart: always
+    env_file:
+      - ./.env
     networks:
       - infra_kwsnet
     volumes:
