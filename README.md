@@ -2,7 +2,7 @@
 Tensorflow study
 
 
-## Usefull links
+## Useful links
 
 - [awesome korea data](https://github.com/songys/AwesomeKorean_Data)
 - [ai tutorial](https://wikidocs.net/22660)
