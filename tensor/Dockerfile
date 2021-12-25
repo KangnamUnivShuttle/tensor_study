@@ -9,5 +9,6 @@ RUN pip3 install opendatasets==0.1.20
 RUN pip3 install Korpora==0.2.0
 RUN pip3 install tokenizers==0.11.0
 RUN pip3 install transformers==4.15.0
+RUN pip3 install torch==1.10.1
 
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token=", "--NotebookApp.base_url=/jupy2", "--allow-root"]
