@@ -9,6 +9,11 @@ services:
     build: ./
     image: study_tensor
     container_name: kwsnet-jupyter-container
+    deploy:
+      resources:
+        limits:
+          cpus: '7'
+          memory: 8192M
     restart: always
     env_file:
       - ./.env
