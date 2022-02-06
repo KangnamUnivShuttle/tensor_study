@@ -10,6 +10,9 @@ RUN sudo apt-get install cython=0.29.14-0.1ubuntu3 -y
 RUN sudo apt-get remove python3-pip -y
 RUN sudo apt-get install python3-pip -y
 
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+RUN python3 get-pip.py --force-reinstall
+
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
 
