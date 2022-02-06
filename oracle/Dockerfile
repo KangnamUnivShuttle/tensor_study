@@ -1,5 +1,7 @@
 FROM armswdev/tensorflow-arm-neoverse:r22.01-tf-2.7.0-eigen
 
+RUN whereis python3
+
 RUN sudo apt-get update
 RUN sudo apt-get install python3-matplotlib=3.1.2-1ubuntu4 -y
 
@@ -12,6 +14,8 @@ RUN sudo apt-get install python3=3.8.2-0ubuntu2 -y
 
 RUN sudo apt-get remove python3-pip -y
 RUN sudo apt-get install python3-pip -y
+
+RUN whereis python3
 
 RUN python3 -V
 RUN pip3 -V
