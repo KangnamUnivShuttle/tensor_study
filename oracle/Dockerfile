@@ -3,10 +3,7 @@ FROM armswdev/tensorflow-arm-neoverse:r22.01-tf-2.7.0-eigen
 RUN sudo apt-get update
 RUN sudo apt-get install python3-matplotlib=3.1.2-1ubuntu4 -y
 
-RUN sudo apt-get install libfreetype6-dev
-RUN sudo apt-get install pkg-config
-RUN sudo apt-get install libpng12-dev
-RUN sudo apt-get install pkg-config
+RUN sudo apt-get install libfreetype6-dev libpng-devel -y
 
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
