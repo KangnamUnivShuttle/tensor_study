@@ -4,7 +4,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install python3-matplotlib=3.1.2-1ubuntu4 -y
 
 RUN sudo apt-get install libfreetype6-dev=2.10.1-2ubuntu0.1 libfreetype-dev=2.10.1-2ubuntu0.1 -y
-RUN sudo apt-get install pkg-config -y
+RUN sudo apt-get install pkg-config=0.29.1-0ubuntu4 -y
 
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
