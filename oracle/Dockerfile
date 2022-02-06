@@ -7,6 +7,8 @@ RUN sudo apt-get install libfreetype6-dev=2.10.1-2ubuntu0.1 libfreetype-dev=2.10
 RUN sudo apt-get install pkg-config=0.29.1-0ubuntu4 -y
 RUN sudo apt-get install cython=0.29.14-0.1ubuntu3 -y
 
+RUN sudo apt-get install python3=3.8.2-0ubuntu2
+
 RUN sudo apt-get remove python3-pip -y
 RUN sudo apt-get install python3-pip -y
 
