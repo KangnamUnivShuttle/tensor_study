@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.0.3-py3-jupyter
+FROM armswdev/tensorflow-arm-neoverse:r22.01-tf-2.7.0-eigen
 
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
