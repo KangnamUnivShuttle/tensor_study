@@ -12,7 +12,7 @@ RUN /usr/bin/python3 get-pip.py --force-reinstall
 
 RUN whereis pip3
 #pip3: /usr/bin/pip3 /home/ubuntu/python3-venv/bin/pip3.8 /home/ubuntu/python3-venv/bin/pip3
-RUN pwd
+RUN source python3-venv/bin/active
 
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
