@@ -1,0 +1,23 @@
+version: '3'
+
+networks:
+  infra_oraclenet:
+    external: true
+
+services:
+  tensorflow_jupyter:
+    build: ./
+    image: study_tensor
+    container_name: oraclenet-jupyter-container
+    deploy:
+      resources:
+        limits:
+          cpus: '7'
+          memory: 12288M
+    restart: always
+    env_file:
+      - ./.env
+    networks:
+      - infra_oraclenet
+    volumes:
+      - ../notebook:/tf/notebooks
