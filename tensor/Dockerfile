@@ -16,4 +16,6 @@ RUN pip3 install konlpy==0.6.0
 RUN pip3 install git+https://github.com/lovit/customized_konlpy.git
 RUN apt install default-jdk -y
 
+RUN pip3 install nltk==3.6.7
+
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token=", "--NotebookApp.base_url=/jupy2", "--allow-root"]
