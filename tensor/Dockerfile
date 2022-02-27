@@ -26,6 +26,8 @@ RUN apt-get -y update
 
 RUN apt install fonts-nanum-coding -y
 
+RUN pip3 install google-cloud-vision==2.6.3
+
 # RUN apt-get install -y chromium unzip crul
 # RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
 # RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
