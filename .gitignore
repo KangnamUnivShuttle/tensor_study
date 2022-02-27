@@ -134,3 +134,6 @@ lightning_logs
 
 nsmc/
 train_data/
+
+service-account.json
+foo.png
