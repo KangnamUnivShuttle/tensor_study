@@ -5,6 +5,7 @@ RUN pip3 install -r requirements.txt
 
 RUN pip3 install openpyxl==3.0.9
 
+RUN apt-get update
 RUN apt-get install git -y
 RUN pip3 install git+https://github.com/ssut/py-hanspell.git
 
