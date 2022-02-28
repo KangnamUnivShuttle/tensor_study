@@ -30,6 +30,9 @@ RUN pip3 install google-cloud-vision==2.6.3
 
 COPY ./service-account.json /tf/
 
+# RUN mount -t tmpfs -o rw,nosuid,nodev,noexec,relatime,size=2048M tmpfs /dev/shm
+#https://stackoverflow.com/a/53970825/7270469
+
 # RUN apt-get install -y chromium unzip crul
 # RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
 # RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
