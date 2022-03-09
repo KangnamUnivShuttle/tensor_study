@@ -134,4 +134,10 @@ lightning_logs
 
 nsmc/
 train_data/
+<<<<<<< HEAD
 chatbot_model/
+=======
+
+service-account.json
+foo.png
+>>>>>>> b16549edd1542a9e4663dfc085dd20925fbb6c0a

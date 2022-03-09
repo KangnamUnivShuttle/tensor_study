@@ -9,3 +9,10 @@ services:
       - 8888:8888
     volumes:
       - ./notebook:/tf/notebooks
+      - type: tmpfs
+        target: /dev/shm
+        tmpfs:
+          size: 2000000000
+          # https://www.reddit.com/r/docker/comments/dvqh2f/comment/f852oxf/?utm_source=share&utm_medium=web2x&context=3
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/tf/service-account.json
