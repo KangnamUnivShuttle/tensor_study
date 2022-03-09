@@ -30,6 +30,10 @@ RUN pip3 install google-cloud-vision==2.6.3
 
 COPY ./service-account.json /tf/
 
+RUN pip3 install google-api-python-client==2.39.0
+RUN pip3 install google-auth-httplib2==0.1.0
+RUN pip3 install google-auth-oauthlib==0.5.0
+
 # RUN mount -t tmpfs -o rw,nosuid,nodev,noexec,relatime,size=2048M tmpfs /dev/shm
 #https://stackoverflow.com/a/53970825/7270469
 
